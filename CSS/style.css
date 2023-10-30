@@ -132,7 +132,6 @@ body {
   display: block;
   color: var(--secondaryColor);
 }
-
 /* nav ends here */
 
 /* banner */
@@ -168,7 +167,6 @@ body {
   line-height: 28px; /* 175% */
   margin-bottom: 30px;
 }
-
 /* #banner .banner_cnt {
   transform: translateY(80%);
   transition: 0.35s ease;
@@ -176,7 +174,6 @@ body {
 #banner .banner_cnt.slick-active .banner_cnt {
   transform: translateY(0%);
 } */
-
 #banner .bannerDots {
   position: absolute;
   bottom: 25%;
@@ -444,7 +441,6 @@ body {
 /* countdown ends here */
 
 /* best offer starts here  */
-
 #offer .text h5 {
   color: #444;
   font-family: var(--secondaryFont);
@@ -470,4 +466,51 @@ body {
 #offer .text .edit a {
   display: block;
 }
+#offer .video {
+  position: relative;
+}
+
+#offer .video .overlay a {
+  position: absolute;
+  top: 47%;
+  left: 68%;
+  font-size: 35px;
+  color: var(--primaryColor);
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  z-index: 2;
+  display: block;
+}
+#offer .video .overlay a::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(1);
+  animation: btn 2s linear infinite forwards;
+}
+@keyframes btn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
 /* best offer ends here  */
+
+/* latest news starts here */
+#news .edit {
+  padding: 115px 0 45px 0;
+}
+/* latest news ends here */
