@@ -6,6 +6,7 @@ $(function () {
     fade: true,
     dotsClass: 'bannerDots container',
   });
+
   // BOOTSTRAP TOOLTIP
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'

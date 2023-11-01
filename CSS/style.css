@@ -42,13 +42,14 @@ body {
   font-family: var(--secondaryFont);
   font-size: 18px;
   font-weight: 600;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
   padding: 13px 66px 13px 37px;
   display: inline-block;
   position: relative;
 }
 .button a {
   color: #fff;
+  display: inline-block;
 }
 .arrow i {
   position: absolute;
@@ -329,9 +330,6 @@ body {
   margin-top: 40px;
   margin: auto;
 }
-#seller .button {
-  margin: auto;
-}
 /* best seller ends */
 
 /* countdown starts here */
@@ -513,4 +511,87 @@ body {
 #news .edit {
   padding: 115px 0 45px 0;
 }
+#news .editing {
+  position: relative;
+}
+#news .editing a {
+  color: black;
+  display: block;
+  margin: 4px 0 11px 0;
+}
+#news .editing span {
+  margin-left: 140px;
+}
+#news .change i {
+  position: absolute;
+  color: black;
+  top: 9px;
+  left: 94px;
+}
+#news .text h2 {
+  color: #11161e;
+  font-family: var(--secondaryFont);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 9px 0 2px 0;
+}
+#news .text p {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
 /* latest news ends here */
+
+/* footer starts here */
+footer {
+  width: 100%;
+  height: 680px;
+  background: #11161e;
+}
+footer .prefooter {
+  margin: 100px 0 76px 0;
+}
+footer .socialIcons ul li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 5px;
+}
+footer .socialIcons li:hover a {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+footer .socialIcons ul li a {
+  color: var(--secondaryColor);
+  font-size: 20px;
+}
+.form input {
+  border-bottom: 1px solid #e0e0e0;
+  border: none;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #898989;
+  color: white;
+  outline: none;
+  margin-bottom: 70px;
+}
+.footerArea .image {
+  position: relative;
+}
+.footerArea .image span {
+  color: #fff;
+  font-family: var(--secondaryFont);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+/* footer ends here */
